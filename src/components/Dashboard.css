@@ -1,0 +1,83 @@
+/* Dashboard.css */
+.dashboard-container {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+body{
+  /* background-color: #007bff; */
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(243, 7, 144) 0%, rgba(4,0,4,1) 90% );
+}
+/* Dashboard.css */
+@media print {
+  body {
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+    background-color: #fff; /* Set background color to white */
+  }
+  
+  .dashboard-container {
+    margin: 0; /* Remove margin for the dashboard container */
+    padding: 0; /* Remove padding for the dashboard container */
+    border: none; /* Remove border for the dashboard container */
+  }
+  
+  .dashboard-section {
+    page-break-inside: avoid; /* Avoid splitting sections across pages */
+  }
+
+  .dashboard-header {
+    display: none; /* Hide the dashboard header when printing */
+  }
+}
+
+.dashboard-header {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.dashboard-section {
+  margin-bottom: 20px;
+}
+
+.dashboard-section h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.dashboard-table {
+  width: 800px;
+  border-collapse: collapse;
+}
+
+.dashboard-table th, .dashboard-table td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.dashboard-table th {
+  text-align: left;
+  background-color: #f2f2f2;
+}
+
+.dashboard-image {
+  max-width: 100px;
+}
+
+.dashboard-update-button {
+  padding: 50spx 50px;
+  font-size: 12px; /* Adjust the font size as needed */
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+.dashboard-update-button:hover {
+  background-color: #0056b3;
+}
